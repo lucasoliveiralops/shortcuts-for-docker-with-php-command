@@ -1,0 +1,5 @@
+{
+    "test": " composer test",
+    "coverage": " composer test-coverage",
+    "test-f": "vendor/bin/co-phpunit --prepend test/bootstrap.php --filter"
+}

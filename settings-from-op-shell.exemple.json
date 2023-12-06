@@ -1,0 +1,7 @@
+[
+    {
+       "folder":"dockerProjects/exemple",
+       "dockerName":"docker-name-container",
+       "runCommand":"cd application"
+    }
+ ]
