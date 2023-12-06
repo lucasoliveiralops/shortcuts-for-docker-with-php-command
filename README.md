@@ -38,8 +38,8 @@ No exemplo acima ele irá reproduzir: 'docker exec -it nome_container sh' + coma
 ## Instação
 
 ```bash
-  git clone git@github.com:lucasoliveiralops shortcuts-for-docker-with-php-command.git
-  sudo mv shortcuts-for-docker-with-php-command/de  /usr/local/bin/de
+  git@github.com:lucasoliveiralops/shortcuts-for-docker-with-php-command.git
+  sudo mv shortcuts-for-docker-with-php-command/de.php  /usr/local/bin/de
   sudo chmod +x /usr/local/bin/de 
 ```
 
@@ -52,5 +52,6 @@ Basicamente existe dois arquivos: ".settings-from-op-shell" e "'.suggar-syntax-f
 
 **.suggar-syntax-from-op-shell**: Ele é o arquivo responsável por criar suggar synxtax, exemplo, quero rodar um teste com php unit, porém não quero escrever um comando tão grande, então usarei esse arquivo para criar uma suggar synxtax e reduzir o comando.
 
+**Caminho dos arquivos de configuração: /home/root**
 
 **Os exemplos dos arquivos se encontram no Projeto.**
