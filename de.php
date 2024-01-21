@@ -49,7 +49,7 @@ function execCommand($command, $setting)
     );
     echo PHP_EOL . PHP_EOL . $exec;
 
-    return ! empty($exec);
+    return (bool) $exec;
 }
 
 
@@ -91,7 +91,7 @@ function getCommandMounted($command, $dockerName)
         'restart' => "docker restart $dockerName"
     ];
     if (empty($defaultCommands[$command])) {
-        return "docker exec -it " . $dockerName . " sh -c '" . $command . "'";
+        return "docker exec " . $dockerName . " sh -c '" . $command . "'";
     }
 
     return $defaultCommands[$command];
